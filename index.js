@@ -27,8 +27,8 @@ const cron = require('node-cron');
 
 
 
-cron.schedule('*/3 * * * * *',()=>{ // cada cambio de segundos se ejecuta puede ser 5 8 10 segundos
-    console.log('cada cambio de segundos se ejecuta puede ser 5 8 10 segundos')
+cron.schedule('*/3 * * * * *',()=>{ // se ejecuta cada 3 segundos
+    console.log('se ejecuta cada 3 segundos')
 })
 cron.schedule('1-5 * * * * *',()=>{ // del segundo 1 hasta el 5 se ejecutara y luego se pausara
     console.log('del segundo 1 hasta el 5 se ejecutara y luego se pausara')
@@ -36,6 +36,6 @@ cron.schedule('1-5 * * * * *',()=>{ // del segundo 1 hasta el 5 se ejecutara y l
 cron.schedule('1,20,40,50 * * * * *',()=>{ // se va a ejecutar cuando llegue a cada uno de los segundos especificados
     console.log('se va a ejecutar cuando llegue a cada uno de los segundos especificados')
 })
-cron.schedule('*/1 * * * *',()=>{ // cada cambio de minuto se ejecuta puede ser 5 8 10 minustos
-    console.log('cada cambio de minuto se ejecuta puede ser 5 8 10 minustos')
+cron.schedule('*/1 * * * *',()=>{ // cada cambio de minuto se ejecuta
+    console.log('cada cambio de minuto se ejecuta')
 })
